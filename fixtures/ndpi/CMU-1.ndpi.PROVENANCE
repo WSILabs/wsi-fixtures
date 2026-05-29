@@ -1,0 +1,11 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/CMU-1.ndpi
+retrieval_date: 2026-05-28
+sha256: edf4a1ccf395c7000ae93ad3b44c07d97043810e00be0c1d167dd09bbe436e46
+size_bytes: 198030965
+format: Hamamatsu NDPI
+license_spdx: CC0-1.0
+license_file: CMU-1.ndpi.LICENSE
+description: Small scan with valid JPEG headers, brightfield, circa 2009
+citation: |
+  Hamamatsu whole-slide imaging test corpus, mirrored by the openslide
+  project at Carnegie Mellon University. Contributed under CC0-1.0.
