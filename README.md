@@ -1,0 +1,66 @@
+# wsi-fixtures
+
+A small, public-license corpus of whole-slide imaging (WSI) test
+files. Used by [wsitools](https://github.com/wsilabs/wsitools) and
+other WSI tooling for CI integration tests.
+
+## What's included
+
+Currently two CC0 fixtures from the
+[openslide-testdata](https://openslide.cs.cmu.edu/download/openslide-testdata/)
+corpus:
+
+| File | Size | Format | License |
+|---|---|---|---|
+| `fixtures/svs/CMU-1-Small-Region.svs` | 1.85 MB | Aperio SVS | CC0-1.0 |
+| `fixtures/ndpi/CMU-1.ndpi` | 188.86 MB | Hamamatsu NDPI | CC0-1.0 |
+
+Each fixture has a sibling `<name>.LICENSE` with the verbatim CC0
+deed and `<name>.PROVENANCE` recording source URL, SHA-256, and
+retrieval date.
+
+## How CI consumers use this
+
+GitHub Release `v1` hosts per-format tarballs:
+- `svs.tar` (~2 MB)
+- `ndpi.tar` (~189 MB)
+
+Each tarball preserves the in-repo directory structure: `tar xf
+svs.tar` extracts to `svs/CMU-1-Small-Region.svs`.
+
+Example GitHub Actions step:
+
+```yaml
+- name: Download fixtures
+  run: |
+    mkdir -p sample_files
+    cd sample_files
+    gh release download v1 --repo wsilabs/wsi-fixtures --pattern '*.tar'
+    for t in *.tar; do tar xf "$t" && rm "$t"; done
+  env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Releases are immutable. Pin a specific tag (`v1`, `v2`, ...) for
+reproducibility.
+
+## Adding a fixture
+
+1. Audit licensing. Capture verbatim license text in
+   `fixtures/<format>/<name>.LICENSE` and SPDX identifier in
+   `manifest.json`. If the license doesn't allow redistribution,
+   do not add the fixture.
+2. Write `fixtures/<format>/<name>.PROVENANCE` with source URL,
+   retrieval date, SHA-256, citation.
+3. Add the binary at `fixtures/<format>/<name>`.
+4. Update `manifest.json`.
+5. Run `scripts/verify.sh` — must pass.
+6. Run `scripts/pack.sh` — produces `dist/<format>.tar`.
+7. Publish a NEW release tag (e.g. `v2`) with the rebuilt tarballs.
+   Do not modify existing release assets — releases are immutable.
+
+## License
+
+The repo metadata, scripts, and documentation are MIT-licensed (see
+`LICENSE`). Each fixture binary is governed by its own
+`<name>.LICENSE` file.

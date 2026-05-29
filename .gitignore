@@ -1,0 +1,20 @@
+# Built tarballs (uploaded as release assets; not committed).
+dist/
+
+# Download caches.
+.cache/
+
+# Fixture binaries are shipped as GitHub Release assets, not committed.
+# Each format dir keeps its .LICENSE + .PROVENANCE in-repo; the binary lives
+# locally for build/verify but is gitignored.
+fixtures/**/*.svs
+fixtures/**/*.ndpi
+fixtures/**/*.tiff
+fixtures/**/*.tif
+fixtures/**/*.bif
+fixtures/**/*.scn
+fixtures/**/*.szi
+fixtures/**/*.iris
+fixtures/**/*.ome.tiff
+fixtures/**/*.dcm
+fixtures/**/*.zip
