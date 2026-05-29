@@ -1,0 +1,25 @@
+{
+  "version": "v1",
+  "fixtures": [
+    {
+      "path": "fixtures/svs/CMU-1-Small-Region.svs",
+      "size": 1938955,
+      "sha256": "ed92d5a9f2e86df67640d6f92ce3e231419ce127131697fbbce42ad5e002c8a7",
+      "source_url": "https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs",
+      "retrieval_date": "2026-05-28",
+      "license_spdx": "CC0-1.0",
+      "license_file": "fixtures/svs/CMU-1-Small-Region.svs.LICENSE",
+      "tarball_asset": "svs.tar"
+    },
+    {
+      "path": "fixtures/ndpi/CMU-1.ndpi",
+      "size": 198030965,
+      "sha256": "edf4a1ccf395c7000ae93ad3b44c07d97043810e00be0c1d167dd09bbe436e46",
+      "source_url": "https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/CMU-1.ndpi",
+      "retrieval_date": "2026-05-28",
+      "license_spdx": "CC0-1.0",
+      "license_file": "fixtures/ndpi/CMU-1.ndpi.LICENSE",
+      "tarball_asset": "ndpi.tar"
+    }
+  ]
+}
