@@ -1,0 +1,10 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs
+retrieval_date: 2026-05-28
+sha256: ed92d5a9f2e86df67640d6f92ce3e231419ce127131697fbbce42ad5e002c8a7
+size_bytes: 1938955
+format: Aperio SVS
+license_spdx: CC0-1.0
+license_file: CMU-1-Small-Region.svs.LICENSE
+citation: |
+  Aperio whole-slide imaging test corpus, mirrored by the openslide project at
+  Carnegie Mellon University. Contributed by Aperio under CC0-1.0.
