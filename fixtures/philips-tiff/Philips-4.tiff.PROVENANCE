@@ -1,0 +1,11 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/Philips-TIFF/Philips-4.tiff
+retrieval_date: 2026-06-07
+sha256: 6a743d3bbf721a63f1fc2920f41ddcca43571346665114c6827e63efe034a0b0
+size_bytes: 290991342
+format: Philips TIFF
+license_spdx: CC0-1.0
+license_file: Philips-4.tiff.LICENSE
+citation: |
+  Philips TIFF whole-slide imaging test corpus, mirrored by the openslide project at
+  Carnegie Mellon University. Used for label classification and splice testing.
+  Contributed under CC0-1.0.

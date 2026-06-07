@@ -1,0 +1,12 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs
+retrieval_date: 2026-06-07
+sha256: ae9161dddb13d62f9e35997ba73b819d70ffb71b4a9aea7659da6f85f72294b6
+size_bytes: 1938955
+format: Generic TIFF (stripped)
+license_spdx: CC0-1.0
+license_file: CMU-1-Small-Region.stripped.tiff.LICENSE
+citation: |
+  Derived from CMU-1-Small-Region.svs (Aperio, CC0-1.0) via
+  opentile-go scripts/regen-generic-tiff.py: converted to a stripped generic TIFF,
+  Aperio prefix in ImageDescription rewritten so it is not detected as SVS,
+  label and macro sub-images retained.
