@@ -40,6 +40,16 @@
       "license_spdx": "CC0-1.0",
       "license_file": "fixtures/generic-tiff/CMU-1-Small-Region.stripped.tiff.LICENSE",
       "tarball_asset": "generic-tiff.tar"
+    },
+    {
+      "path": "fixtures/bif/Ventana-1.bif",
+      "size": 227377284,
+      "sha256": "2eb05cd8f628c36408c3fde09beeeebaaae90181c4f840d5475ec7594bdcbbb6",
+      "source_url": "https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/Ventana-1.bif",
+      "retrieval_date": "2026-06-07",
+      "license_spdx": "CC0-1.0",
+      "license_file": "fixtures/bif/Ventana-1.bif.LICENSE",
+      "tarball_asset": "bif.tar"
     }
   ]
 }
