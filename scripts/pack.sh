@@ -13,7 +13,10 @@ mkdir -p dist
 for fmt_dir in fixtures/*/; do
     fmt=$(basename "$fmt_dir")
     out="dist/${fmt}.tar"
-    (cd fixtures && tar cf "../$out" "$fmt")
+    # COPYFILE_DISABLE + --exclude keep macOS AppleDouble (._*) resource-fork
+    # junk and .DS_Store out of the tarball — they break consumers that glob
+    # the fixture directory (e.g. opening ._Philips-4.tiff as a slide).
+    (cd fixtures && COPYFILE_DISABLE=1 tar --exclude='._*' --exclude='.DS_Store' -cf "../$out" "$fmt")
     size=$(stat -f%z "$out" 2>/dev/null || stat -c%s "$out")
     printf "packed  %-12s  %12d bytes\n" "$out" "$size"
 done
