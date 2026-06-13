@@ -50,6 +50,16 @@
       "license_spdx": "CC0-1.0",
       "license_file": "fixtures/bif/Ventana-1.bif.LICENSE",
       "tarball_asset": "bif.tar"
+    },
+    {
+      "path": "fixtures/cog-wsi/CMU-1-Small-Region_cog-wsi.tiff",
+      "size": 1977866,
+      "sha256": "c2f6268521b2e1c2c831d3ad6da8dfa309515f1039f61b73f9818bd998ae5f1e",
+      "source_url": "https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs",
+      "retrieval_date": "2026-06-13",
+      "license_spdx": "CC0-1.0",
+      "license_file": "fixtures/cog-wsi/CMU-1-Small-Region_cog-wsi.tiff.LICENSE",
+      "tarball_asset": "cog-wsi.tar"
     }
   ]
 }
