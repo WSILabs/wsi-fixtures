@@ -1,0 +1,16 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs
+retrieval_date: 2026-06-13
+sha256: c2f6268521b2e1c2c831d3ad6da8dfa309515f1039f61b73f9818bd998ae5f1e
+size_bytes: 1977866
+format: COG-WSI (Cloud-Optimized GeoTIFF WSI)
+license_spdx: CC0-1.0
+license_file: CMU-1-Small-Region_cog-wsi.tiff.LICENSE
+citation: |
+  Derived from CMU-1-Small-Region.svs (Aperio, CC0-1.0) via
+  wsitools v0.23.0-dev (main @ 6eeb480) `convert --to cog-wsi`: the pyramid is
+  re-encoded as a Cloud-Optimized GeoTIFF WSI, and the associated images are
+  copied faithfully (verbatim source strips + Predictor/JPEGTables, via
+  opentile-go v0.39.0 AssociatedSourceOf) — a LZW + Predictor=2 label, a JPEG
+  thumbnail, and a JPEG overview. NOTE: the COG-WSI writer's tile ordering is
+  nondeterministic, so regenerating produces a pixel-identical but
+  byte-different file; this exact artifact (sha256 above) is the canonical one.
