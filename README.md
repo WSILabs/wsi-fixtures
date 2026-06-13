@@ -15,6 +15,9 @@ the authoritative list):
 |---|---|---|---|
 | `fixtures/svs/CMU-1-Small-Region.svs` | 1.85 MB | Aperio SVS | CC0-1.0 |
 | `fixtures/ndpi/CMU-1.ndpi` | 188.86 MB | Hamamatsu NDPI | CC0-1.0 |
+| `fixtures/philips-tiff/Philips-4.tiff` | 277.51 MB | Philips TIFF | CC0-1.0 |
+| `fixtures/generic-tiff/CMU-1-Small-Region.stripped.tiff` | 1.85 MB | Generic TIFF (stripped, derived) | CC0-1.0 |
+| `fixtures/bif/Ventana-1.bif` | 216.85 MB | Ventana BIF | CC0-1.0 |
 | `fixtures/cog-wsi/CMU-1-Small-Region_cog-wsi.tiff` | 1.89 MB | COG-WSI (derived) | CC0-1.0 |
 
 Each fixture has a sibling `<name>.LICENSE` with the verbatim CC0
@@ -23,13 +26,18 @@ retrieval date.
 
 ## How CI consumers use this
 
-GitHub Release `v1` hosts per-format tarballs:
+Each GitHub Release hosts per-format tarballs; releases are cumulative, so the
+latest tag holds the whole corpus. The current release is **`v4`**:
 - `svs.tar` (~2 MB)
 - `ndpi.tar` (~189 MB)
+- `philips-tiff.tar` (~278 MB)
+- `generic-tiff.tar` (~2 MB)
+- `bif.tar` (~217 MB)
 - `cog-wsi.tar` (~2 MB)
 
 Each tarball preserves the in-repo directory structure: `tar xf
-svs.tar` extracts to `svs/CMU-1-Small-Region.svs`.
+svs.tar` extracts to `svs/CMU-1-Small-Region.svs`. Consumers should pull only
+the tarballs they need (`--pattern`) rather than the whole corpus.
 
 Example GitHub Actions step:
 
@@ -38,7 +46,8 @@ Example GitHub Actions step:
   run: |
     mkdir -p sample_files
     cd sample_files
-    gh release download v1 --repo wsilabs/wsi-fixtures --pattern '*.tar'
+    gh release download v4 --repo wsilabs/wsi-fixtures \
+      --pattern 'svs.tar' --pattern 'ndpi.tar'   # only what you need
     for t in *.tar; do tar xf "$t" && rm "$t"; done
   env:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

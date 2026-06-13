@@ -1,5 +1,5 @@
 {
-  "version": "v1",
+  "version": "v4",
   "fixtures": [
     {
       "path": "fixtures/svs/CMU-1-Small-Region.svs",
