@@ -1,0 +1,18 @@
+source_url: (original work; contributed directly by the copyright holder)
+retrieval_date: 2026-06-14
+format: Aperio SVS (JPEG 2000-compressed tiled pyramid; thumbnail/label/overview associated images)
+origin: tissue-microarray slide owned by the copyright holder; region crop re-encoded via Aperio ImageScope export
+copyright_holder: Toby C. Cornish / WSILabs
+license_spdx: CC-BY-4.0
+license_file: 590_crop_jp2k_imagescope.svs.LICENSE
+sha256: 72cb781a8dae8ef6b3a446cedf9956f54690a3eb570a972fbb05e6dab48b8bfc
+attribution_required: |
+  "590 tissue-microarray whole-slide image crop, (c) Toby C. Cornish / WSILabs,
+   licensed under CC BY 4.0."
+citation: |
+  Aperio ImageScope region-crop export of a 590 tissue-microarray slide, fully
+  owned by Toby C. Cornish / WSILabs and contributed expressly for the
+  wsi-fixtures corpus under CC BY 4.0 (attribution required). JPEG 2000 tiled
+  encoding (an Aperio-legitimate SVS codec). One of four ImageScope-export
+  codec variants (jp2k/jpeg70 as .svs; lzw/none as .tif) exercising the full
+  associated-image + tile-codec decode matrix.

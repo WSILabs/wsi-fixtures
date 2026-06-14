@@ -14,6 +14,10 @@ contributed under CC-BY-4.0 (see `manifest.json` for the authoritative list):
 | File | Size | Format | License |
 |---|---|---|---|
 | `fixtures/svs/CMU-1-Small-Region.svs` | 1.85 MB | Aperio SVS | CC0-1.0 |
+| `fixtures/svs/590_crop_jp2k_imagescope.svs` | 1.39 MB | Aperio SVS (JPEG 2000 tiled) | CC-BY-4.0 |
+| `fixtures/svs/590_crop_jpeg70_imagescope.svs` | 2.59 MB | Aperio SVS (JPEG q70 tiled) | CC-BY-4.0 |
+| `fixtures/svs/590_crop_lzw_imagescope.tif` | 8.80 MB | TIFF (LZW tiled, ImageScope export) | CC-BY-4.0 |
+| `fixtures/svs/590_crop_none_imagescope.tif` | 22.65 MB | TIFF (uncompressed tiled, ImageScope export) | CC-BY-4.0 |
 | `fixtures/ndpi/CMU-1.ndpi` | 188.86 MB | Hamamatsu NDPI | CC0-1.0 |
 | `fixtures/philips-tiff/Philips-4.tiff` | 277.51 MB | Philips TIFF | CC0-1.0 |
 | `fixtures/generic-tiff/CMU-1-Small-Region.stripped.tiff` | 1.85 MB | Generic TIFF (stripped, derived) | CC0-1.0 |
@@ -25,16 +29,17 @@ contributed under CC-BY-4.0 (see `manifest.json` for the authoritative list):
 
 Each fixture has a sibling `<name>.LICENSE` with the verbatim license
 deed and `<name>.PROVENANCE` recording source, SHA-256, and retrieval
-date. Most fixtures are CC0; `scan_621_grundium_dicom` is original work
-contributed under CC-BY-4.0 and **requires attribution** (see its `.LICENSE`).
+date. Most fixtures are CC0; `scan_621_grundium_dicom` and the four `590_crop_*`
+ImageScope-export crops are original work contributed under CC-BY-4.0 and
+**require attribution** (see their `.LICENSE`).
 DICOM fixtures are directories of `.dcm` instances (the sidecars sit next to
 the directory).
 
 ## How CI consumers use this
 
 Each GitHub Release hosts per-format tarballs; releases are cumulative, so the
-latest tag holds the whole corpus. The current release is **`v5`**:
-- `svs.tar` (~2 MB)
+latest tag holds the whole corpus. The current release is **`v6`**:
+- `svs.tar` (~39 MB)
 - `ndpi.tar` (~189 MB)
 - `philips-tiff.tar` (~278 MB)
 - `generic-tiff.tar` (~2 MB)
