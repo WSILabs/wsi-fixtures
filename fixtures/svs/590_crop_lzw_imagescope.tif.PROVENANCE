@@ -1,0 +1,19 @@
+source_url: (original work; contributed directly by the copyright holder)
+retrieval_date: 2026-06-14
+format: TIFF (LZW + Predictor-compressed tiled pyramid; LZW thumbnail/label + JPEG overview associated images)
+origin: tissue-microarray slide owned by the copyright holder; region crop re-encoded via Aperio ImageScope export
+copyright_holder: Toby C. Cornish / WSILabs
+license_spdx: CC-BY-4.0
+license_file: 590_crop_lzw_imagescope.tif.LICENSE
+sha256: 367a2c811d26d4063c5107b4aff673332c9dbf7ee78c315146452ef2ffbcabb0
+attribution_required: |
+  "590 tissue-microarray whole-slide image crop, (c) Toby C. Cornish / WSILabs,
+   licensed under CC BY 4.0."
+citation: |
+  Aperio ImageScope region-crop export of a 590 tissue-microarray slide, fully
+  owned by Toby C. Cornish / WSILabs and contributed expressly for the
+  wsi-fixtures corpus under CC BY 4.0 (attribution required). LZW-compressed
+  tiled TIFF (a non-JPEG codec only available under ImageScope's TIFF export);
+  carries a mixed-codec associated-image set (LZW thumbnail + LZW label + JPEG
+  overview). The regression fixture for opentile-go #28 (tiled LZW DecodedTile)
+  and #29 (non-JPEG associated-image decode).
