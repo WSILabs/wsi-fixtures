@@ -1,0 +1,17 @@
+source_url: (original work; contributed directly by the copyright holder)
+retrieval_date: 2026-06-14
+format: DICOM VL Whole Slide Microscopy (6 instances: pyramid + label/overview/thumbnail)
+scanner: Grundium Ocus
+copyright_holder: Toby C. Cornish / WSILabs
+license_spdx: CC-BY-4.0
+license_file: scan_621_grundium_dicom.LICENSE
+instances: 6 (scan_621__pyr00/pyr02/pyr04 + label/overview/thumbnail); per-instance SHA-256 in manifest.json
+attribution_required: |
+  "scan_621 whole-slide microscopy DICOM dataset, (c) Toby C. Cornish / WSILabs,
+   licensed under CC BY 4.0."
+citation: |
+  Original whole-slide microscopy DICOM dataset (Grundium Ocus scan), fully
+  owned by Toby C. Cornish / WSILabs and contributed expressly for the
+  wsi-fixtures corpus under CC BY 4.0 (attribution required). JPEG-baseline
+  frames. Serves as the corpus's canonical, redistributable DICOM-WSM fixture
+  for read + write/transform CI coverage.

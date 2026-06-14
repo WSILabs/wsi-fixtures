@@ -1,0 +1,15 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/DICOM/
+retrieval_date: 2026-06-14
+format: DICOM VL Whole Slide Microscopy (5-instance pyramid, HTJ2K)
+scanner: 3DHISTECH Kft. Pannoramic 1000
+license_spdx: CC0-1.0
+license_file: 3DHISTECH-HTJ2K.LICENSE
+instances: 5 (000010.dcm .. 000014.dcm); per-instance SHA-256 in manifest.json
+citation: |
+  Small-region (1792x1888 L0) 3DHISTECH Pannoramic 1000 whole-slide microscopy
+  sample, the HTJ2K (High-Throughput JPEG 2000) codec variant of the companion
+  3DHISTECH-JP2K fixture. Both are CC0 derivatives of the 3DHISTECH DICOM
+  datasets in the openslide-testdata DICOM corpus
+  (https://openslide.cs.cmu.edu/download/openslide-testdata/DICOM/, listed CC0).
+  Curated into the opentile-go / wsitools test pool to exercise the HTJ2K
+  decode path; CC0 carries to derivatives.
