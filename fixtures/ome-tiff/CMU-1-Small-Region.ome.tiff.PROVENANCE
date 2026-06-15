@@ -1,0 +1,18 @@
+source_url: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs
+retrieval_date: 2026-06-14
+sha256: 13ba9cedd70d83ba53bbe8e1eebaddf60026c5b7769a2913f0da7bf91fb2f33b
+size_bytes: 1979019
+format: OME-TIFF (single-pyramid; thumbnail/label/overview associated images)
+license_spdx: CC0-1.0
+license_file: CMU-1-Small-Region.ome.tiff.LICENSE
+citation: |
+  Derived from CMU-1-Small-Region.svs (Aperio, CC0-1.0) via wsitools
+  v0.22.0-dev (main) `convert --to ome-tiff`: the pyramid is re-encoded as an
+  OME-TIFF and the associated images are written faithfully (verbatim source
+  strips + Predictor/JPEGTables, via opentile-go AssociatedEncoding) — a
+  multi-strip JPEG thumbnail, an LZW + Predictor=2 label, and a multi-strip
+  JPEG overview. Serves as opentile-go's canonical small OME-TIFF read fixture
+  and the GH #23 regression case: the OME reader previously reported the LZW
+  label as CompressionUnknown and truncated the multi-strip JPEGs to their
+  first strip; the equivalent generic-TIFF reader (same writer) decodes all
+  three correctly, and this fixture pins byte-parity between the two readers.

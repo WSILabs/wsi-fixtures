@@ -21,6 +21,7 @@ contributed under CC-BY-4.0 (see `manifest.json` for the authoritative list):
 | `fixtures/ndpi/CMU-1.ndpi` | 188.86 MB | Hamamatsu NDPI | CC0-1.0 |
 | `fixtures/philips-tiff/Philips-4.tiff` | 277.51 MB | Philips TIFF | CC0-1.0 |
 | `fixtures/generic-tiff/CMU-1-Small-Region.stripped.tiff` | 1.85 MB | Generic TIFF (stripped, derived) | CC0-1.0 |
+| `fixtures/ome-tiff/CMU-1-Small-Region.ome.tiff` | 1.89 MB | OME-TIFF (derived) | CC0-1.0 |
 | `fixtures/bif/Ventana-1.bif` | 216.85 MB | Ventana BIF | CC0-1.0 |
 | `fixtures/cog-wsi/CMU-1-Small-Region_cog-wsi.tiff` | 1.89 MB | COG-WSI (derived) | CC0-1.0 |
 | `fixtures/dicom/3DHISTECH-JP2K/` | 2.66 MB | DICOM WSM (JPEG 2000, derived) | CC0-1.0 |
@@ -38,11 +39,12 @@ the directory).
 ## How CI consumers use this
 
 Each GitHub Release hosts per-format tarballs; releases are cumulative, so the
-latest tag holds the whole corpus. The current release is **`v6`**:
+latest tag holds the whole corpus. The current release is **`v7`**:
 - `svs.tar` (~39 MB)
 - `ndpi.tar` (~189 MB)
 - `philips-tiff.tar` (~278 MB)
 - `generic-tiff.tar` (~2 MB)
+- `ome-tiff.tar` (~2 MB)
 - `bif.tar` (~217 MB)
 - `cog-wsi.tar` (~2 MB)
 - `dicom.tar` (~348 MB)

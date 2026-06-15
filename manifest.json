@@ -1,5 +1,5 @@
 {
-  "version": "v6",
+  "version": "v7",
   "fixtures": [
     {
       "path": "fixtures/svs/CMU-1-Small-Region.svs",
@@ -80,6 +80,16 @@
       "license_spdx": "CC0-1.0",
       "license_file": "fixtures/generic-tiff/CMU-1-Small-Region.stripped.tiff.LICENSE",
       "tarball_asset": "generic-tiff.tar"
+    },
+    {
+      "path": "fixtures/ome-tiff/CMU-1-Small-Region.ome.tiff",
+      "size": 1979019,
+      "sha256": "13ba9cedd70d83ba53bbe8e1eebaddf60026c5b7769a2913f0da7bf91fb2f33b",
+      "source_url": "https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs",
+      "retrieval_date": "2026-06-14",
+      "license_spdx": "CC0-1.0",
+      "license_file": "fixtures/ome-tiff/CMU-1-Small-Region.ome.tiff.LICENSE",
+      "tarball_asset": "ome-tiff.tar"
     },
     {
       "path": "fixtures/bif/Ventana-1.bif",
