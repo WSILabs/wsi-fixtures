@@ -1,0 +1,19 @@
+source_url: (original work; contributed directly by the copyright holder)
+retrieval_date: 2026-06-20
+format: Aperio SVS (JPEG-tiled pyramid, 3 levels; thumbnail/label/overview associated images)
+origin: whole-slide image scanned and owned by the copyright holder; contributed verbatim (no crop/re-encode)
+copyright_holder: Toby C. Cornish / WSILabs
+license_spdx: CC-BY-4.0
+license_file: 239551.svs.LICENSE
+sha256: 019946dbe04eefaee18a90bb3222ae5ac51f081736ff1e195d0a52169ccc9535
+attribution_required: |
+  "Whole-slide image '239551', (c) Toby C. Cornish / WSILabs, licensed under
+   CC BY 4.0."
+citation: |
+  Aperio SVS whole-slide image fully owned by Toby C. Cornish / WSILabs and
+  contributed verbatim for the wsi-fixtures corpus under CC BY 4.0 (attribution
+  required). 20x scan, 23999x8015 L0, MPP 0.4967, 240x240 JPEG tiles, a 3-level
+  pyramid with thumbnail + label + overview associated images. Unlike the
+  single-level CC0 CMU-1-Small-Region.svs, this multi-level slide exercises the
+  convert --to svs thumbnail/overview placement (SVS-thumbnail-at-IFD-1) and the
+  associated label|overview remove|replace (rebuildSVS) paths.

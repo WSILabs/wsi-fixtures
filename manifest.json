@@ -1,5 +1,5 @@
 {
-  "version": "v7",
+  "version": "v8",
   "fixtures": [
     {
       "path": "fixtures/svs/CMU-1-Small-Region.svs",
@@ -49,6 +49,16 @@
       "retrieval_date": "2026-06-14",
       "license_spdx": "CC-BY-4.0",
       "license_file": "fixtures/svs/590_crop_none_imagescope.tif.LICENSE",
+      "tarball_asset": "svs.tar"
+    },
+    {
+      "path": "fixtures/svs/239551.svs",
+      "size": 26637925,
+      "sha256": "019946dbe04eefaee18a90bb3222ae5ac51f081736ff1e195d0a52169ccc9535",
+      "source_url": "(original; contributed by the copyright holder)",
+      "retrieval_date": "2026-06-20",
+      "license_spdx": "CC-BY-4.0",
+      "license_file": "fixtures/svs/239551.svs.LICENSE",
       "tarball_asset": "svs.tar"
     },
     {
